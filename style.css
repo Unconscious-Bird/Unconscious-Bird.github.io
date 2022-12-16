@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #afafaf;
+    background-color:#C3073F; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1A1A1D;
+    color: #C3073F
+}
+
+header {
+    display: flex;
+    height:12.5vh;
+    width: 100%;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    border-bottom: solid black 2px;
+    overflow-x: hidden;
+}
+
+.logo img{
+    height: 7.5vh;
+    position: relative;
+    display: block;
+}
+
+.links {
+    display:flex;
+    justify-content: space-evenly;
+    width:40vw;
+    list-style: none;
+}
+
+.link a {
+    color:#C3073F;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: color 0.3s;
+    transition: background 0.3s;
+}
+
+.link a:hover {
+    background-color:#C3073F;
+    color: #afafaf;
+}
+
+main {
+    background: #131315;
+    width: 70vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+main p {
+    text-align: center;
+    width:75%;
+    margin:auto;
+    font-size: 1.2em;
+    margin-top:10px;
+    color: #950740
+}
+
+.discord-name {
+    color: #C3073F;
+    padding: 8px;
+    border: 2px solid #920630;
+    width: fit-content;
+    cursor: pointer;
+    position:relative;
+    border-radius: 20px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+.discord-name::after {
+    content: 'Click the box to copy to your clipboard!';
+    position: absolute;
+    display: block;
+    bottom: -5em;
+    font-size:0.9em;
+    background-color:#1A1A1D;
+    color: #afafaf;
+    padding:10px;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.discord-name:hover::after {
+    visibility: unset;
+    opacity: 1;
+}
+
+.post {
+    position: relative;
+    width: 70%;
+    margin:auto;
+    height: 25vh;
+    border-top: 2px solid #920630;
+    border-bottom: 2px solid #920630;
+    padding:10px;
+}
+
+.good-span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.post-flex {
+    display:flex;
+    height:100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post-img {
+    height:100%;
+    max-width:15vw;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.post-content {
+    height:100%;
+}
+
+.go-back {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.go-back a {
+    color: #C3073F;
+    text-decoration: none;
+}
+
+.go-back span:hover {
+    text-decoration: underline;
+}
