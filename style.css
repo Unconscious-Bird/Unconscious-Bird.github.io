@@ -120,7 +120,7 @@ main p {
     position: relative;
     width: 70%;
     margin:auto;
-    height: 25vh;
+    height: fit-content;
     border-top: 2px solid #920630;
     border-bottom: 2px solid #920630;
     padding:10px;
